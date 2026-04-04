@@ -9,6 +9,12 @@ import { RarBtn } from "../components/rar-btn";
 import { Card } from "../components/card";
 import { Footer } from "../components/footer";
 
+interface BgState {
+  icon: React.ReactNode;
+  accent: string;
+  key: number;
+}
+
 // inject global keyframes once
 if (!document.getElementById("ae-kf")) {
   const st = document.createElement("style");
@@ -33,7 +39,11 @@ export default function App({}) {
   const [rar, setRar] = useState<"all" | Rarity>("all");
   const [q, setQ] = useState("");
   const [lang, setLang] = useState<"en" | "ru">("ru");
-  const [bg, setBg] = useState({ icon: "⚡", accent: "#ffffff", key: 0 });
+  const [bg, setBg] = useState<BgState>({
+    icon: "⚡",
+    accent: "#ffffff",
+    key: 0,
+  });
   const T = UI_TEXT[lang];
 
   const handleCat = (key: string) => {
