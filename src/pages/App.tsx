@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useMemo } from "react";
 import { UI_TEXT } from "../common/ui-text";
 import { CATEGORIES } from "../common/categories";
@@ -8,6 +9,13 @@ import { CatBtn } from "../components/category-btn";
 import { RarBtn } from "../components/rar-btn";
 import { Card } from "../components/card";
 import { Footer } from "../components/footer";
+import Book from "../assets/icons/book.gif";
+
+interface BgState {
+  icon: React.ReactNode;
+  accent: string;
+  key: number;
+}
 
 // inject global keyframes once
 if (!document.getElementById("ae-kf")) {
@@ -33,7 +41,11 @@ export default function App({}) {
   const [rar, setRar] = useState<"all" | Rarity>("all");
   const [q, setQ] = useState("");
   const [lang, setLang] = useState<"en" | "ru">("ru");
-  const [bg, setBg] = useState({ icon: "⚡", accent: "#ffffff", key: 0 });
+  const [bg, setBg] = useState<BgState>({
+    icon: <img src={Book} alt="Book" />,
+    accent: "#ffffff",
+    key: 0,
+  });
   const T = UI_TEXT[lang];
 
   const handleCat = (key: string) => {
@@ -101,15 +113,34 @@ export default function App({}) {
         <span
           style={{
             fontSize: "min(52vw,430px)",
+            width: "1em",
+            height: "1em",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
             userSelect: "none",
             lineHeight: 1,
             opacity: 0.052,
             filter: `drop-shadow(0 0 140px ${bg.accent})`,
             animation:
-              "bgPop .55s cubic-bezier(.34,1.56,.64,1) forwards,bgFloat 7s ease-in-out .55s infinite",
+              "bgPop .55s cubic-bezier(.34,1.56,.64,1) forwards, bgFloat 7s ease-in-out .55s infinite",
           }}
         >
-          {bg.icon}
+          {typeof bg.icon === "string" ? (
+            bg.icon
+          ) : (
+            <div style={{ width: "1em", height: "1em", display: "flex" }}>
+              {React.isValidElement(bg.icon) &&
+                React.cloneElement(bg.icon as React.ReactElement<any>, {
+                  style: {
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    display: "block",
+                  },
+                })}
+            </div>
+          )}
         </span>
       </div>
       <div
