@@ -1,5 +1,5 @@
 import Axe from "../assets/icons/axe.png";
-import Boots from "../assets/icons/Boots.png";
+import Boots from "../assets/icons/boots.png";
 import Bow from "../assets/icons/bow.webp";
 import Chestplate from "../assets/icons/chestplate.png";
 import Crossbow from "../assets/icons/crossbow.png";
