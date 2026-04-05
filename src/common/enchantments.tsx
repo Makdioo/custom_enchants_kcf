@@ -2,7 +2,7 @@ export const ENCHANTMENTS = [
   // ─── SWORD ────────────────────────────────────────────────
   {
     name: "Abiding",
-    nameRu: "Нерушимость",
+    nameRu: "Вечный",
     desc: "Weapons with this enchant become unbreakable",
     descRu: "Оружие с этим зачарованием становится нерушимым",
     apply: ["sword", "axe"],
@@ -20,7 +20,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Ambit",
-    nameRu: "Радиус",
+    nameRu: "Охват",
     desc: "Damages mobs within a radius that increases with level",
     descRu: "Наносит урон мобам в радиусе, который растёт с уровнем",
     apply: ["sword", "axe"],
@@ -29,7 +29,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Beastslayer",
-    nameRu: "Истребитель",
+    nameRu: "Убийца монстров",
     desc: "Increases damage dealt to Hostile Mobs",
     descRu: "Увеличивает урон по враждебным мобам",
     apply: ["sword", "axe"],
@@ -65,7 +65,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Bone Crusher",
-    nameRu: "Дробитель костей",
+    nameRu: "Костолом",
     desc: "Increases damage dealt to Skeletons",
     descRu: "Увеличивает урон по скелетам",
     apply: ["sword", "axe"],
@@ -83,7 +83,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Critical",
-    nameRu: "Критика",
+    nameRu: "Крит",
     desc: "Increases damage done with critical hit",
     descRu: "Увеличивает урон от критических ударов",
     apply: ["sword"],
@@ -126,27 +126,27 @@ export const ENCHANTMENTS = [
     rarity: "Unique",
     maxLevel: 3,
   },
-  {
-    name: "Diploid",
-    nameRu: "Диплоид",
-    desc: "Chance to multiply mob drops. Costs 5 souls / activation",
-    descRu: "Шанс умножить дроп с мобов. Стоит 5 душ/активацию",
-    apply: ["sword"],
-    rarity: "Fabled",
-    maxLevel: 5,
-  },
+  // {
+  //   name: "Diploid",
+  //   nameRu: "Диплоид",
+  //   desc: "Chance to multiply mob drops. Costs 5 souls / activation",
+  //   descRu: "Шанс умножить дроп с мобов. Стоит 5 душ/активацию",
+  //   apply: ["sword"],
+  //   rarity: "Fabled",
+  //   maxLevel: 5,
+  // },
   {
     name: "Disappear",
     nameRu: "Исчезновение",
     desc: "Chance to become invisible when low on health",
     descRu: "Шанс стать невидимым при малом HP",
-    apply: ["sword"],
+    apply: ["armor"],
     rarity: "Ultimate",
     maxLevel: 4,
   },
   {
     name: "Disarm",
-    nameRu: "Разоружение",
+    nameRu: "Обезаруживание",
     desc: "Chance to disarm opponent",
     descRu: "Шанс разоружить противника",
     apply: ["sword"],
@@ -155,7 +155,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Disarmor",
-    nameRu: "Снятие брони",
+    nameRu: "Разоружение",
     desc: "Chance of unequipping random armor piece from your opponent",
     descRu: "Шанс снять случайный элемент брони с противника",
     apply: ["sword"],
@@ -164,7 +164,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Disintegrate",
-    nameRu: "Разрушение",
+    nameRu: "Распад",
     desc: "Chance to deal extra durability damage to all enemy armor",
     descRu: "Шанс нанести доп. урон прочности всей броне врага",
     apply: ["sword"],
@@ -200,7 +200,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Endmaster",
-    nameRu: "Властелин эндера",
+    nameRu: "Мастер эндера",
     desc: "Deal double damage to mobs in the End",
     descRu: "Двойной урон по мобам в Эндере",
     apply: ["sword"],
@@ -236,7 +236,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Featherweight",
-    nameRu: "Лёгкость",
+    nameRu: "Лёгкий вес",
     desc: "Chance to get a burst of Haste",
     descRu: "Шанс получить ускорение",
     apply: ["sword", "axe"],
@@ -254,7 +254,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Fuddle",
-    nameRu: "Мешанина",
+    nameRu: "Путаница",
     desc: "Disorganize opponent's hotbar",
     descRu: "Перепутывает слоты горячей панели врага",
     apply: ["sword"],
@@ -263,7 +263,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Greatsword",
-    nameRu: "Двуручник",
+    nameRu: "Великий мечь",
     desc: "Multiplies damage against players wielding a Bow",
     descRu: "Умножает урон по игрокам с луком в руках",
     apply: ["sword"],
@@ -272,7 +272,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Ice Aspect",
-    nameRu: "Ледяное лезвие",
+    nameRu: "Ледяной аспект",
     desc: "A chance of causing slowness when attacking",
     descRu: "Шанс замедлить врага при атаке",
     apply: ["sword"],
@@ -281,7 +281,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Immolation",
-    nameRu: "Воспламенение",
+    nameRu: "Сожжение",
     desc: "Set all mobs in radius on fire",
     descRu: "Поджигает всех мобов в радиусе",
     apply: ["sword"],
@@ -290,7 +290,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Infernal",
-    nameRu: "Инфернал",
+    nameRu: "Адский",
     desc: "Explosive fire effect",
     descRu: "Взрывной огненный эффект",
     apply: ["sword", "axe"],
@@ -317,7 +317,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Kill Aura",
-    nameRu: "Аура убийства",
+    nameRu: " Килл аура",
     desc: "Chance to kill multiple monsters in radius",
     descRu: "Шанс убить нескольких мобов в радиусе",
     apply: ["sword"],
@@ -362,7 +362,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Netherling",
-    nameRu: "Нижний мир",
+    nameRu: "Адское существо",
     desc: "Double damage to mobs in Nether",
     descRu: "Двойной урон по мобам в Незере",
     apply: ["sword"],
@@ -376,7 +376,7 @@ export const ENCHANTMENTS = [
     descRu: "Больше урона по мобам ночью",
     apply: ["sword"],
     rarity: "Ultimate",
-    maxLevel: 1,
+    maxLevel: 3,
   },
   {
     name: "Nightwalker",
@@ -425,7 +425,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Rebound",
-    nameRu: "Отдача",
+    nameRu: "Восстановление",
     desc: "Gain some health back after kills",
     descRu: "Восстанавливает здоровье после убийств",
     apply: ["sword", "axe"],
@@ -450,36 +450,36 @@ export const ENCHANTMENTS = [
     rarity: "Unique",
     maxLevel: 4,
   },
-  {
-    name: "Soulbound",
-    nameRu: "Привязь души",
-    desc: "A chance to keep item on death",
-    descRu: "Шанс сохранить предмет после смерти",
-    apply: ["sword", "axe"],
-    rarity: "Fabled",
-    maxLevel: 3,
-  },
-  {
-    name: "Soulgrind",
-    nameRu: "Жатва душ",
-    desc: "Chance to get souls by killing mobs",
-    descRu: "Шанс получить души при убийстве мобов",
-    apply: ["sword"],
-    rarity: "Fabled",
-    maxLevel: 3,
-  },
-  {
-    name: "Spiritmaster",
-    nameRu: "Мастер духов",
-    desc: "Chance to get more souls from killing players",
-    descRu: "Шанс получить больше душ при убийстве игроков",
-    apply: ["sword"],
-    rarity: "Fabled",
-    maxLevel: 3,
-  },
+  // {
+  //   name: "Soulbound",
+  //   nameRu: "Привязь души",
+  //   desc: "A chance to keep item on death",
+  //   descRu: "Шанс сохранить предмет после смерти",
+  //   apply: ["sword", "axe"],
+  //   rarity: "Fabled",
+  //   maxLevel: 3,
+  // },
+  // {
+  //   name: "Soulgrind",
+  //   nameRu: "Жатва душ",
+  //   desc: "Chance to get souls by killing mobs",
+  //   descRu: "Шанс получить души при убийстве мобов",
+  //   apply: ["sword"],
+  //   rarity: "Fabled",
+  //   maxLevel: 3,
+  // },
+  // {
+  //   name: "Spiritmaster",
+  //   nameRu: "Мастер духов",
+  //   desc: "Chance to get more souls from killing players",
+  //   descRu: "Шанс получить больше душ при убийстве игроков",
+  //   apply: ["sword"],
+  //   rarity: "Fabled",
+  //   maxLevel: 3,
+  // },
   {
     name: "Strike",
-    nameRu: "Удар молнии",
+    nameRu: "Молния",
     desc: "Chance to strike lightning at the opponent",
     descRu: "Шанс ударить молнией по противнику",
     apply: ["sword", "bow", "crossbow", "trident"],
@@ -497,7 +497,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Suspend",
-    nameRu: "Подвешивание",
+    nameRu: "Без отдачи",
     desc: "Chance to cause no knockback to mobs",
     descRu: "Шанс не давать откидывание мобам",
     apply: ["sword"],
@@ -506,7 +506,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Thunderlord",
-    nameRu: "Громовластитель",
+    nameRu: "Громовержец",
     desc: "Strike monsters with lightning every 3 consecutive hits",
     descRu: "Бьёт мобов молнией каждые 3 удара подряд",
     apply: ["sword", "axe"],
@@ -526,22 +526,22 @@ export const ENCHANTMENTS = [
   // ─── AXE ──────────────────────────────────────────────────
   {
     name: "Arrow Break",
-    nameRu: "Отбив стрелы",
+    nameRu: "Слом стрелы",
     desc: "Chance for arrows to bounce off you while holding this item",
     descRu: "Шанс отбить стрелы при удержании предмета",
     apply: ["axe"],
     rarity: "Ultimate",
     maxLevel: 6,
   },
-  {
-    name: "Axe of Spirits",
-    nameRu: "Топор духов",
-    desc: "Chance to get more souls from killing players",
-    descRu: "Шанс получить больше душ при убийстве игроков",
-    apply: ["axe"],
-    rarity: "Fabled",
-    maxLevel: 3,
-  },
+  // {
+  //   name: "Axe of Spirits",
+  //   nameRu: "Топор духов",
+  //   desc: "Chance to get more souls from killing players",
+  //   descRu: "Шанс получить больше душ при убийстве игроков",
+  //   apply: ["axe"],
+  //   rarity: "Fabled",
+  //   maxLevel: 3,
+  // },
   {
     name: "Barbarian",
     nameRu: "Варвар",
@@ -580,7 +580,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Cleave",
-    nameRu: "Рубка",
+    nameRu: "Рассечение",
     desc: "Damages players within a radius that increases with level",
     descRu: "Наносит урон игрокам в радиусе (растёт с уровнем)",
     apply: ["axe"],
@@ -598,16 +598,16 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Immolate",
-    nameRu: "Воспламенение",
+    nameRu: "Испепеление",
     desc: "Increases damage dealt to Spiders",
     descRu: "Увеличивает урон по паукам",
-    apply: ["axe"],
+    apply: ["axe", "sword"],
     rarity: "Elite",
     maxLevel: 3,
   },
   {
     name: "Inflame",
-    nameRu: "Поджог",
+    nameRu: "Воспламинение",
     desc: "Set all players in radius on fire",
     descRu: "Поджигает всех игроков в радиусе",
     apply: ["axe"],
@@ -625,7 +625,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Shatter",
-    nameRu: "Разрушитель",
+    nameRu: "Разбивание",
     desc: "Chance to deal extra durability damage to all enemy armor",
     descRu: "Шанс нанести доп. урон прочности всей броне врага",
     apply: ["axe"],
@@ -663,7 +663,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Explosive",
-    nameRu: "Взрывные стрелы",
+    nameRu: "Взрывной",
     desc: "Chance for arrows to explode",
     descRu: "Шанс взрывных стрел",
     apply: ["bow"],
@@ -672,7 +672,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Hellfire",
-    nameRu: "Адский огонь",
+    nameRu: "Бомбардир",
     desc: "Arrows turn into fireballs",
     descRu: "Стрелы превращаются в огненные шары",
     apply: ["bow"],
@@ -681,7 +681,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Hunter",
-    nameRu: "Охотник",
+    nameRu: "Hunter",
     desc: "Increases damage dealt to Passive Mobs",
     descRu: "Увеличивает урон по пассивным мобам",
     apply: ["bow", "crossbow", "trident"],
@@ -699,7 +699,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Perish",
-    nameRu: "Иссушение",
+    nameRu: "Погибель",
     desc: "A chance to give the Wither effect",
     descRu: "Шанс наложить иссушение",
     apply: ["bow", "crossbow", "trident"],
@@ -708,7 +708,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Piercing",
-    nameRu: "Пробой",
+    nameRu: "Пронзание",
     desc: "Inflicts more damage",
     descRu: "Наносит дополнительный урон",
     apply: ["bow"],
@@ -717,7 +717,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Snare",
-    nameRu: "Силок",
+    nameRu: "Ловушка",
     desc: "Chance to slow and fatigue enemies with projectiles",
     descRu: "Шанс замедлить и ослабить врагов снарядами",
     apply: ["bow"],
@@ -735,7 +735,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Soulless",
-    nameRu: "Душегуб",
+    nameRu: "Бездушный",
     desc: "Increases damage dealt to Hostile Mobs",
     descRu: "Увеличивает урон по враждебным мобам",
     apply: ["bow", "crossbow", "trident"],
@@ -755,7 +755,7 @@ export const ENCHANTMENTS = [
   // ─── CROSSBOW ─────────────────────────────────────────────
   {
     name: "Frenzy",
-    nameRu: "Исступление",
+    nameRu: "Безумие",
     desc: "Chance for arrows to explode",
     descRu: "Шанс взрывных стрел",
     apply: ["crossbow"],
@@ -764,7 +764,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Marksman",
-    nameRu: "Меткач",
+    nameRu: "Стрелок",
     desc: "Increases damage dealt with Crossbows",
     descRu: "Увеличивает урон из арбалетов",
     apply: ["crossbow"],
@@ -782,7 +782,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Neutralize",
-    nameRu: "Нейтрализация",
+    nameRu: "Обезвреживание",
     desc: "Chance to disarm opponent",
     descRu: "Шанс разоружить противника",
     apply: ["bow", "crossbow"],
@@ -802,7 +802,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Deadshot",
-    nameRu: "Мёртвый выстрел",
+    nameRu: "Меткий стрелок",
     desc: "Headshots with tridents deal double damage",
     descRu: "Хедшоты трезубцем наносят двойной урон",
     apply: ["trident"],
@@ -811,7 +811,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Impact",
-    nameRu: "Импакт",
+    nameRu: "Сокрушение",
     desc: "Chance to double dealt damage",
     descRu: "Шанс удвоить нанесённый урон",
     apply: ["trident"],
@@ -838,7 +838,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Strife",
-    nameRu: "Распря",
+    nameRu: "Раздор",
     desc: "Increases Trident melee damage",
     descRu: "Увеличивает урон трезубцем ближнего боя",
     apply: ["trident"],
@@ -847,7 +847,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Twinge",
-    nameRu: "Укол",
+    nameRu: "Кровотечение",
     desc: "Make your enemy bleed if hit using melee",
     descRu: "Заставляет кровоточить при ударе в ближнем бою",
     apply: ["trident"],
@@ -858,7 +858,7 @@ export const ENCHANTMENTS = [
   // ─── ARMOR ────────────────────────────────────────────────
   {
     name: "Angelic",
-    nameRu: "Ангельское",
+    nameRu: "Ангел",
     desc: "Heals health when damaged",
     descRu: "Лечит здоровье при получении урона",
     apply: ["armor"],
@@ -876,7 +876,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Arrow Deflect",
-    nameRu: "Отклонение стрел",
+    nameRu: "Отражение стрел",
     desc: "Chance to prevent enemy arrow from dealing damage",
     descRu: "Шанс предотвратить урон от вражеских стрел",
     apply: ["armor"],
@@ -903,7 +903,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Divert",
-    nameRu: "Перенаправление",
+    nameRu: "Отвлечение",
     desc: "Chance of poisoning opponent and gaining regeneration",
     descRu: "Шанс отравить атакующего и получить регенерацию",
     apply: ["armor"],
@@ -935,7 +935,7 @@ export const ENCHANTMENTS = [
     descRu: "Шанс призвать железных голема для защиты",
     apply: ["armor"],
     rarity: "Ultimate",
-    maxLevel: 10,
+    maxLevel: 5,
   },
   {
     name: "Hardened",
@@ -948,7 +948,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Heavy",
-    nameRu: "Тяжёлый",
+    nameRu: "Тяжесть",
     desc: "Decreases damage from enemy bows by 2% per level",
     descRu: "Снижает урон от луков врага на 2% за уровень",
     apply: ["armor"],
@@ -1011,7 +1011,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Poisoned",
-    nameRu: "Ядовитый",
+    nameRu: "Отравленный",
     desc: "Chance to give poison to your attacker",
     descRu: "Шанс отравить атакующего",
     apply: ["armor"],
@@ -1047,7 +1047,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Safeguard",
-    nameRu: "Защита",
+    nameRu: "Охрана",
     desc: "Chance to gain Damage Resistance when defending",
     descRu: "Шанс получить устойчивость к урону при защите",
     apply: ["armor"],
@@ -1083,7 +1083,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Trickster",
-    nameRu: "Обманщик",
+    nameRu: "Трикстер",
     desc: "When hit, chance to teleport directly behind your opponent",
     descRu: "Шанс телепортироваться за спину атакующего",
     apply: ["armor"],
@@ -1092,7 +1092,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Turmoil",
-    nameRu: "Смута",
+    nameRu: "Смятение",
     desc: "Chance to prevent opponents' guards from spawning",
     descRu: "Шанс помешать вражеским стражам появиться",
     apply: ["armor"],
@@ -1101,7 +1101,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Unholy",
-    nameRu: "Нечестивый",
+    nameRu: "Unholy",
     desc: "Defend with Weakness and Wither effects",
     descRu: "Защищает слабостью и иссушением",
     apply: ["armor"],
@@ -1119,12 +1119,12 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Ward",
-    nameRu: "Страж",
+    nameRu: "Оберек",
     desc: "A chance to absorb enemy damage",
     descRu: "Шанс поглотить урон врага",
     apply: ["armor"],
     rarity: "Unique",
-    maxLevel: 4,
+    maxLevel: 2,
   },
   {
     name: "Wither",
@@ -1139,7 +1139,7 @@ export const ENCHANTMENTS = [
   // ─── HELMET ───────────────────────────────────────────────
   {
     name: "Aquatic",
-    nameRu: "Водяной",
+    nameRu: "Акватика",
     desc: "Breathe underwater",
     descRu: "Дышишь под водой",
     apply: ["helmet"],
@@ -1177,7 +1177,7 @@ export const ENCHANTMENTS = [
   // ─── CHESTPLATE ───────────────────────────────────────────
   {
     name: "Chunky",
-    nameRu: "Толстяк",
+    nameRu: "Крепыш",
     desc: "Chance to receive less damage",
     descRu: "Шанс получить меньше урона",
     apply: ["chestplate"],
@@ -1186,7 +1186,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Fumble",
-    nameRu: "Оплошность",
+    nameRu: "Неуклюжесть",
     desc: "Chance to explode enemy when hit by their arrows",
     descRu: "Шанс взорвать врага, когда его стрела тебя попала",
     apply: ["chestplate"],
@@ -1215,7 +1215,7 @@ export const ENCHANTMENTS = [
   // ─── LEGGINGS ─────────────────────────────────────────────
   {
     name: "Explosive Demise",
-    nameRu: "Взрывная гибель",
+    nameRu: "Взрывная кончина",
     desc: "Summon Creepers as guards when near death",
     descRu: "Призывает криперов-стражей при критическом HP",
     apply: ["leggings"],
@@ -1231,15 +1231,15 @@ export const ENCHANTMENTS = [
     rarity: "Elite",
     maxLevel: 3,
   },
-  {
-    name: "Nulify",
-    nameRu: "Аннулирование",
-    desc: "Chance to reflect attack and multiply damage. Costs 40 souls",
-    descRu: "Шанс отразить атаку и умножить урон. Стоит 40 душ",
-    apply: ["leggings"],
-    rarity: "Fabled",
-    maxLevel: 3,
-  },
+  // {
+  //   name: "Nulify",
+  //   nameRu: "Аннулирование",
+  //   desc: "Chance to reflect attack and multiply damage. Costs 40 souls",
+  //   descRu: "Шанс отразить атаку и умножить урон. Стоит 40 душ",
+  //   apply: ["leggings"],
+  //   rarity: "Fabled",
+  //   maxLevel: 3,
+  // },
 
   // ─── BOOTS ────────────────────────────────────────────────
   {
@@ -1262,7 +1262,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Convulse",
-    nameRu: "Конвульсия",
+    nameRu: "Сотресение",
     desc: "Chance to throw your attackers into the air",
     descRu: "Шанс подбросить атакующего в воздух",
     apply: ["boots"],
@@ -1271,7 +1271,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Gears",
-    nameRu: "Шестерни",
+    nameRu: "Ускорение",
     desc: "Added speed when equipped",
     descRu: "Постоянная прибавка к скорости",
     apply: ["boots"],
@@ -1280,7 +1280,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Jelly Legs",
-    nameRu: "Мягкое приземление",
+    nameRu: "Желейные ноги",
     desc: "Chance to negate fall damage",
     descRu: "Шанс отменить урон от падения",
     apply: ["boots"],
@@ -1289,7 +1289,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Lava Walker",
-    nameRu: "Ходок по лаве",
+    nameRu: "Лавоход",
     desc: "Walk on Lava",
     descRu: "Ходьба по лаве",
     apply: ["boots"],
@@ -1334,18 +1334,9 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Water Walker",
-    nameRu: "Ходок по воде",
+    nameRu: "Водоход",
     desc: "Walk on Water",
     descRu: "Ходьба по воде",
-    apply: ["boots"],
-    rarity: "Legendary",
-    maxLevel: 1,
-  },
-  {
-    name: "Wings",
-    nameRu: "Крылья",
-    desc: "Allows flying when worn",
-    descRu: "Позволяет летать при ношении",
     apply: ["boots"],
     rarity: "Legendary",
     maxLevel: 1,
@@ -1363,7 +1354,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Haste",
-    nameRu: "Спешка",
+    nameRu: "Ускорение",
     desc: "Allows you to swing your tools faster",
     descRu: "Позволяет быстрее бить инструментами",
     apply: ["tool"],
@@ -1372,25 +1363,25 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Hasten",
-    nameRu: "Ускорение",
+    nameRu: "Спешка",
     desc: "Chance to gain Haste after breaking blocks",
     descRu: "Шанс получить ускорение добычи после разбития блоков",
     apply: ["tool"],
     rarity: "Simple",
     maxLevel: 3,
   },
-  {
-    name: "Multiplication",
-    nameRu: "Умножение",
-    desc: "Chance to multiply ore drops. Costs 5 souls / activation",
-    descRu: "Шанс умножить выпадение руд. Стоит 5 душ/активацию",
-    apply: ["tool"],
-    rarity: "Fabled",
-    maxLevel: 5,
-  },
+  // {
+  //   name: "Multiplication",
+  //   nameRu: "Умножение",
+  //   desc: "Chance to multiply ore drops. Costs 5 souls / activation",
+  //   descRu: "Шанс умножить выпадение руд. Стоит 5 душ/активацию",
+  //   apply: ["tool"],
+  //   rarity: "Fabled",
+  //   maxLevel: 5,
+  // },
   {
     name: "Rebreather",
-    nameRu: "Ребризер",
+    nameRu: "Акваланг",
     desc: "Chance to regain air when mining underwater",
     descRu: "Шанс восстановить воздух при добыче под водой",
     apply: ["tool"],
@@ -1418,22 +1409,22 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Smelting",
-    nameRu: "Плавка",
+    nameRu: "Переплавка",
     desc: "Chance to smelt mined blocks",
     descRu: "Шанс автоматически выплавить добытые блоки",
     apply: ["tool"],
     rarity: "Simple",
     maxLevel: 3,
   },
-  {
-    name: "Soulminer",
-    nameRu: "Добытчик душ",
-    desc: "Chance to get souls by mining",
-    descRu: "Шанс получить души при добыче",
-    apply: ["tool"],
-    rarity: "Fabled",
-    maxLevel: 3,
-  },
+  // {
+  //   name: "Soulminer",
+  //   nameRu: "Добытчик душ",
+  //   desc: "Chance to get souls by mining",
+  //   descRu: "Шанс получить души при добыче",
+  //   apply: ["tool"],
+  //   rarity: "Fabled",
+  //   maxLevel: 3,
+  // },
   {
     name: "Telepathy",
     nameRu: "Телепатия",
@@ -1454,7 +1445,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Unbreakable",
-    nameRu: "Нерушимый",
+    nameRu: "Нерушимость",
     desc: "Tools with this enchant become unbreakable",
     descRu: "Инструменты с этим зачарованием становятся нерушимыми",
     apply: ["tool"],
@@ -1463,27 +1454,36 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Vein Miner",
-    nameRu: "Жила",
+    nameRu: "Жильная руда",
     desc: "Mine entire vein of ores",
     descRu: "Добывает всю жилу руды целиком",
     apply: ["tool"],
     rarity: "Elite",
     maxLevel: 3,
   },
+  {
+    name: "Cutter",
+    nameRu: "Огранщик",
+    desc: "Chance to turn ore into a block",
+    descRu: "Шанс превротить руду в блок",
+    apply: ["tool"],
+    rarity: "Fabled",
+    maxLevel: 1,
+  },
 
   // ─── HOE ──────────────────────────────────────────────────
   {
     name: "Carrot Planter",
-    nameRu: "Морковный фермер",
+    nameRu: "Сажатель моркови",
     desc: "Plant carrots in a 3x3 area by Shift+right-clicking",
     descRu: "Сажает морковь на 3×3 при Shift+ПКМ",
     apply: ["hoe"],
-    rarity: "Simple",
+    rarity: "Ultimate",
     maxLevel: 3,
   },
   {
     name: "Planter",
-    nameRu: "Сеятель",
+    nameRu: "Сажатель",
     desc: "Plant seeds in a 3x3 area by Shift+right-clicking",
     descRu: "Сажает семена на 3×3 при Shift+ПКМ",
     apply: ["hoe"],
@@ -1492,11 +1492,11 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Potato Planter",
-    nameRu: "Картофельный фермер",
+    nameRu: "Сажатель картохи",
     desc: "Plant potatoes in a 3x3 area by Shift+right-clicking",
     descRu: "Сажает картофель на 3×3 при Shift+ПКМ",
     apply: ["hoe"],
-    rarity: "Simple",
+    rarity: "Ultimate",
     maxLevel: 3,
   },
   {
@@ -1548,7 +1548,7 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Hook Luck",
-    nameRu: "Удача рыбака",
+    nameRu: "Удачливость",
     desc: "Chance to increase luck while fishing",
     descRu: "Шанс увеличить удачу при рыбалке",
     apply: ["fishing"],
@@ -1571,11 +1571,11 @@ export const ENCHANTMENTS = [
     descRu: "Крючок наносит урон",
     apply: ["fishing"],
     rarity: "Ultimate",
-    maxLevel: 1,
+    maxLevel: 9,
   },
   {
     name: "Snap",
-    nameRu: "Рывок",
+    nameRu: "Хватка",
     desc: "Pull hit entity towards you",
     descRu: "Притягивает пойманный объект к тебе",
     apply: ["fishing"],
@@ -1586,7 +1586,7 @@ export const ENCHANTMENTS = [
   // ─── ELYTRA ───────────────────────────────────────────────
   {
     name: "Judgement",
-    nameRu: "Судный день",
+    nameRu: "Правосудие",
     desc: "Chance of poisoning opponent and gaining regeneration",
     descRu: "Шанс отравить атакующего и получить регенерацию",
     apply: ["elytra"],
@@ -1604,22 +1604,22 @@ export const ENCHANTMENTS = [
   },
   {
     name: "Reinforced",
-    nameRu: "Усиленный",
+    nameRu: "Укрепленный",
     desc: "Reduces damage dealt to you",
     descRu: "Снижает входящий урон в полёте",
     apply: ["elytra"],
     rarity: "Ultimate",
     maxLevel: 4,
   },
-  {
-    name: "Rush",
-    nameRu: "Рывок",
-    desc: "Chance of speed boost when taking off. Costs 10 souls",
-    descRu: "Шанс ускорения при взлёте. Стоит 10 душ",
-    apply: ["elytra"],
-    rarity: "Fabled",
-    maxLevel: 3,
-  },
+  // {
+  //   name: "Rush",
+  //   nameRu: "Рывок",
+  //   desc: "Chance of speed boost when taking off. Costs 10 souls",
+  //   descRu: "Шанс ускорения при взлёте. Стоит 10 душ",
+  //   apply: ["elytra"],
+  //   rarity: "Fabled",
+  //   maxLevel: 3,
+  // },
   {
     name: "Slingshot",
     nameRu: "Рогатка",

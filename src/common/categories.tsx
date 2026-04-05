@@ -16,7 +16,7 @@ import Book from "../assets/icons/book.gif";
 export const CATEGORIES = [
   {
     key: "all",
-    icon: <img src={Book} alt="Crossbow" style={{ width: 20, height: 20 }} />,
+    icon: <img src={Book} alt ="Crossbow" style={{ width: 20, height: 20 }} />,
     en: "All",
     ru: "Все",
     accent: "#ffffff",
