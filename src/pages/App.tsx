@@ -233,17 +233,18 @@ export default function App({}) {
                 onClick={() => setQ("")}
                 style={{
                   position: "absolute",
-                  right: 10,
+                  right: 5,
                   top: "50%",
-                  transform: "translateY(-50%)",
+                  transform: "translateY(-45%)",
                   background: "transparent",
                   border: "none",
                   color: "#888",
-                  fontSize: 14,
+                  fontSize: 10,
                   cursor: "pointer",
+                  padding: "5px",
                 }}
               >
-                <img src={Close} alt="close" />
+                <img src={Close} alt="close" style={{ width: "18px" }} />
               </button>
             </div>
 
