@@ -51,13 +51,13 @@ export function Footer() {
           </p>
 
           {/* taglines */}
-          <p style={{ fontSize: 12, color: "#2a2a3a", letterSpacing: ".3px" }}>
+          <p style={{ fontSize: 13, color: "#2a2a3a", letterSpacing: ".3px" }}>
             I like cats and maklube
           </p>
           <p
             style={{
-              fontSize: 11,
-              color: "#202030",
+              fontSize: 13,
+              color: "#7b3e3e",
               letterSpacing: "1.5px",
               textTransform: "uppercase",
             }}
@@ -80,7 +80,7 @@ export function Footer() {
           <p
             style={{
               fontSize: 10,
-              color: "#181828",
+              color: "#272746",
               marginTop: 6,
               letterSpacing: 0.3,
             }}

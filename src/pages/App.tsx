@@ -10,6 +10,7 @@ import { RarBtn } from "../components/rar-btn";
 import { Card } from "../components/card";
 import { Footer } from "../components/footer";
 import Book from "../assets/icons/book.gif";
+import Close from "../assets/icons/close.svg";
 
 interface BgState {
   icon: React.ReactNode;
@@ -97,7 +98,7 @@ export default function App({}) {
         overflowX: "hidden",
       }}
     >
-      {/* ── BIG BG EMOJI ── */}
+      {/* ── BIG BG IMAGE ── */}
       <div
         key={bg.key}
         style={{
@@ -217,16 +218,33 @@ export default function App({}) {
                   background: "#101020",
                   border: "1px solid #1e1e2e",
                   borderRadius: 10,
-                  padding: "8px 13px 8px 28px",
+                  padding: "8px 28px 8px 28px",
                   color: "#ddd",
                   fontSize: 13,
                   outline: "none",
-                  width: 185,
+                  width: 240,
                 }}
                 placeholder={T.searchPlaceholder}
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
               />
+
+              <button
+                onClick={() => setQ("")}
+                style={{
+                  position: "absolute",
+                  right: 10,
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  background: "transparent",
+                  border: "none",
+                  color: "#888",
+                  fontSize: 14,
+                  cursor: "pointer",
+                }}
+              >
+                <img src={Close} alt="close" />
+              </button>
             </div>
 
             {/* Lang toggle */}
