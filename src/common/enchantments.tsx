@@ -935,7 +935,7 @@ export const ENCHANTMENTS = [
     descRu: "Шанс призвать железных голема для защиты",
     apply: ["armor"],
     rarity: "Ultimate",
-    maxLevel: 5,
+    maxLevel: 10,
   },
   {
     name: "Hardened",
